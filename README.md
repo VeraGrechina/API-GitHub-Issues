@@ -5,5 +5,15 @@
 ### 2. Создать коллекцию в Postman:
 Под названием "Issue" 
 ### 3. Запрос на создание задачи: 
-✅ POST на адрес: https://api.github.com/repos/VeraGrechina/HW-GitHub/issues;
+✅ POST на адрес: https://api.github.com/repos/VeraGrechina/HW-GitHub/issues; <br>
 ✅ Во вкладке Authorization выбрать Type: Bearer и вставить ранее сгенерированный токен;
+✅ Тело запроса: <br>
+```json
+{
+    "title": "Issue 1",
+    "body": "Something went wrong",
+    "labels": [
+"bug"
+],
+"assignees": ["VeraGrechina"]
+}
