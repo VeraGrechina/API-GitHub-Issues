@@ -12,8 +12,8 @@
 {
     "title": "Issue 1",
     "body": "Something went wrong",
-    "labels": [
-"bug"
-],
+    "labels": ["bug"],
 "assignees": ["VeraGrechina"]
 }
+
+Полученный в ответе токен записываем в переменные коллекции с помощью скрипта JS (вкладка Tests, скрипт выполнится после запроса):  
