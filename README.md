@@ -23,4 +23,6 @@ var value = pm.response.json().number
 pm.collectionVariables.set(key, value) 
 ```
 ### 🌿4. Запрос на получение списка issues:
-✅ GET <span style="color:red;">Текст красного цвета</span> на адрес: https://api.github.com/repos/VeraGrechina/API-GitHub-Issues/issues; <br>
+✅ GET на адрес: https://api.github.com/repos/VeraGrechina/API-GitHub-Issues/issues; <br>
+✅ Во вкладке Authorization выбрать Type: Bearer и вставить ранее сгенерированный токен;
+✅ Тело запроса: отсутствует;
