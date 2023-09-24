@@ -5,7 +5,7 @@
 ### 2. Создать коллекцию в Postman:
 Под названием "Issue" 
 ### 3. Запрос на создание задачи: 
-✅ POST на адрес: https://api.github.com/repos/VeraGrechina/HW-GitHub/issues; <br>
+✅ POST на адрес: https://api.github.com/repos/VeraGrechina/API-GitHub-Issues/issues; <br>
 ✅ Во вкладке Authorization выбрать Type: Bearer и вставить ранее сгенерированный токен;
 ✅ Тело запроса: <br>
 ```json
@@ -16,4 +16,8 @@
 "assignees": ["VeraGrechina"]
 }
 
-Полученный в ответе токен записываем в переменные коллекции с помощью скрипта JS (вкладка Tests, скрипт выполнится после запроса):  
+<br>
+Полученный в ответе номер задачи записываем в переменные коллекции с помощью скрипта JS (вкладка Tests, скрипт выполнится после запроса):<br>
+var key = "isseu_number"
+var value = pm.response.json().number
+pm.collectionVariables.set(key, value) 
