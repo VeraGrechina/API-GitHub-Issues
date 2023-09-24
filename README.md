@@ -17,7 +17,7 @@
 }
 ```
 Полученный в ответе номер задачи записываем в переменные коллекции с помощью скрипта JS (вкладка Tests, скрипт выполнится после запроса):<br>
-``` json
+```
 var key = "isseu_number"
 var value = pm.response.json().number
 pm.collectionVariables.set(key, value) 
