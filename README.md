@@ -16,7 +16,6 @@
 "assignees": ["VeraGrechina"]
 }
 ```
-<br>
 Полученный в ответе номер задачи записываем в переменные коллекции с помощью скрипта JS (вкладка Tests, скрипт выполнится после запроса):<br>
 var key = "isseu_number"
 var value = pm.response.json().number
